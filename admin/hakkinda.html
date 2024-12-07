@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>Vatan Admin - Hakkında Yönetim Paneli</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: none;
+        }
+        .btn {
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+        .current-text {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 16px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="ürün.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    
+                </div>
+                <img src="img/favicon.png" alt=""> <div class="sidebar-brand-text mx-3">VATAN ADMİN</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="ürün.html">
+                    
+                    <span>Ürünler</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="hakkinda.html">
+                   
+                    <span>Hakkında</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="iletisim.html">
+                   
+                    <span>İletişim</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="Misyon.html">
+                   
+                    <span>Misyon-Vizyon</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="kampanyalar.html">
+                    
+                    <span>Kampanyalar</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="birim.html">
+                    
+                    <span>Birimlerimiz</span></a>
+            </li>
+
+            <!-- Heading -->
+            
+
+            <!-- Divider -->
+
+            <!-- Heading -->
+            
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Ara"
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Hesabım
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Ayarlar
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Çıkış Yap
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container">
+                    <h1>Hakkında Sayfası Yönetimi</h1>
+            
+                    <div>
+                        <strong>Mevcut Metin:</strong>
+                        <div id="current-text" class="current-text">
+                            Vatan Bilgisayar 1983 Yılında Elmadağ’da açtığı mağaza ile Türkiye’nin ilk bilgisayar mağazası unvanını taşımaktadır. 10 yılı aşkın süredir online alışveriş sitesi vatanbilgisayar.com ile Türkiye’nin her noktasında milyonlarca müşteriye ulaşmaktadır. Dünyaca ünlü teknoloji markalarının binlerce ürün çeşidiyle her bütçe ve tarza hitap ediyoruz.
+
+Uygun fiyatlarla sizlere hizmet etmek için çalışıyoruz. Vatan Bilgisayar ailesi olarak başlıca hedefimiz Türkiye’nin bir uçtan bir ucuna kadar donatılmış mağazalarımızla her bütçeye hitap ederek siz kullanıcılarımızın memnuniyetini sağlamaktır. Online alışveriş sitemizde taksit seçenekleri, kolay iade, hızlı kargo gibi hizmetler ile alışveriş deneyiminizi arttırmaya, kolaylaştırmaya ve kısa sürede sonuç almanızı sağlamaya çalışıyoruz.
+
+Vatan Bilgisayar’dan satın alacağınız tüm ürünleri orijinal paketleriyle kusursuz olarak tarafınıza iletmekteyiz. Elektronik ürünlerde Akıllı Cep Telefonundan a, Akıllı Saatten Notebooklara ve farklı kategoride binlerce ürüne kolaylıkla ulaşabilirsiniz. Ayrıca kişisel ihtiyaçlarınız, eviniz ve ofisiniz için de Vatan Bilgisayar geniş ürün gamıyla size bir tık kadar yakın.
+
+Günümüz Çağının Gelişen ve Sürekli Yenilenen Teknolojisi Akıllı Cep Telefonlarını birçok marka ve modellerini Vatan Bilgisayar’da bulabilirsiniz. Tüm ihtiyaçlarınıza cevap verebilecek Apple, General Mobile, Huawei, Oppo, Realme, Samsung, Tcl, Tecno, Vivo, Xiaomi, Honor, Omix, gibi markalar tarafından üretilen akıllı cep telefonlarını www.vatanbilgisayar.com adresinden veya Vatan Bilgisayar mağazalarından satın alabilirsiniz. Notebookdan Masaüstü Bilgisayarına, Oyuncu Bilgisayarından Tablete Kadar Son Teknoloji Ürünlerini Vatan’da farklı özellik ve modelde inceleyebilirsiniz. Dizüstü bilgisayarları, masaüstü bilgisayarları, oyun bilgisayarları, geniş ekranlı monitörler, kavisli ekran, oyuncu monitörleri, tavsiye sistemler gibi çeşitli ürün kategorilerini web sitemiz üzerinden sipariş verebilir, Acer, Apple, Asus, Casper, Exper, HP, Lenovo, Samsung, Msi, Dell, gibi ünlü markaları uygun fiyat seçenekleri ile Vatan Bilgisayar’dan satın alabilirsiniz.
+
+Eğlencenin Vazgeçilmez Adresi Haline Gelen Televizyon modellerini Vatan Bilgisayar aracılığıyla inceleyebilir ve satın alabilirsiniz. Grundig, LG, Onvo, Philips, Samsung, Seg, Tcl ve Vestel markaları tarafından üretilen televizyonları, ihtiyaçlarınızı göz önüne alarak farklı özelliklere, tasarıma ve donanıma sahip televizyonları web sitemiz üzerinden ya da Vatan Bilgisayar mağazalarından inceleyerek, en uygun olan ürünü satın alabilirsiniz. Televizyon ve bilgisayardaki görüntüleri düz bir zemine Projeksiyon Cihazları ile yansıtabilirsiniz. LCD, LED veya DLP gibi yansıtma sistemleriyle evinizde sinema salonu oluşturabilirsiniz. Okul, iş yerleri gibi kalabalık gruplara gösteri yapmak için kolaylık sağlamaktadır. Epson, ViewSonic, Anker gibi markalar sizleri bekliyor.
+
+Bilgisayarınızı Daha İyi Kullanabilmeniz İçin Bilgisayar Bileşenleri, birçok açıdan fayda sağlayacak ve işlerinizi daha da kolaylaştıracaktır. Bilgisayar bileşenleri ve bilgisayar oem parçaları AMD, Apple, Asus, Cooler Master, Corsair, Cougar, MSI, Rampage, Toshiba gibi marka seçenekleriyle incelemeniz ve satın almanız için Vatan Bilgisayar’da sizleri bekliyor. Web sitemizde bulunan Pc Toplama sayfası aracılığıyla, bilgisayar toplama sihirbazına erişerek, yaptığınız birbiriyle son derece uyumlu ve sorunsuz çalışacak tüm donanım cihazlarını toplayabilir, kendinize özel kurduğunuz bilgisayar sisteminize ekleyerek, hayallerinizdeki bilgisayara kavuşabilirsiniz. PC ve Notebook uyumlu Corsair, Crucial, Gskill, Lexar, Micron, XPG marka ramleri uygun fiyatlı taksit seçenekleri, kampanya ve indirimlerle Vatan Bilgisayar'dan satın alabilirsiniz. İşlemciler bilgisayarın genel performansından sorumlu en önemli donanımıdır. Ryzen, Core i3, Core i5, Core i7, Amd ve Intel işlemcilerini taksit seçenekleriyle satın almak için Vatan Bilgisayar’ı takip edin. Manzara Fotoğrafları veya Video Çekimlerinin yanı sıra askeriye, trafik ve tarım gibi alanlarda da kullanılan DJI marka drone ve ev elektroniği kategorimizden inceleyebilirsiniz. Eğer fotoğraf ve video çekimlerinize farklı bir boyut kazandırmak istiyorsanız Video ve Outdoor Kameralar işte tam da sizin için uygun cihazlardır. GOPRO, SONY marka video ve Aksiyon & Outdoor Kamera Aksesuarlarına en yakın Vatan Bilgisayar mağazamızdan veya web sitemizden ulaşabilirsiniz. Ofisinizde Yazıcı, Tarayıcı, Kartuş, Toner, Kâğıt ve CD gibi sarf malzemesi ihtiyaçlarınız için bu alanda öncü olan Brother, Canon, Epson, HP gibi markaların yüzlerce ürününü tek tıkla kapınıza kadar getirelim. Evinizin olmazsa olmazları; Küçük Ev Aletleri, Fakir, Delonghi, Grundig, Tefal, Korkmaz, Braun, Arzum, Nespresso, Tchibo, King, Fantom, Electrolux ve daha birçok markanın modelleri cep dostu fiyatlarla sizlerle. Elektrikli ev aletlerinde; süpürgeler, ütüler, soğutma ve ısıtmalar gibi eviniz için önem arz eden kategorilerde dilediğiniz her ürünü bulabilirsiniz. Mutfağınızda bulunması gereken blendarlar, tost makineleri, rondolar, fritözler, mikserler, mutfak şefleri, türk kahve makineleri, filtre kahve makineleri, çay makineleri, katı meyve sıkacakları ve birçok kategorideki ürünler Vatan Bilgisayar’da. Elektrikli Kişisel Bakım Ürünleri; saç maşaları, saç düzleştiricileri, saç kurutma makineleri, epilasyon aletleri, tıraş makineleri, ağız ve diş bakım ürünleri, şarjlı diş fırçaları gibi ürünlerini Arzum, Braun, Philips, Remington, Grundig gibi bir çok markalara ait web sitemizden inceleyebilirsiniz. Yüzlerce ünlü markaya ait ürünleri hızlı bir şekilde çeşitli ödeme seçenekleriyle vatanbilgisayar.com’dan güvenli bir şekilde satın alabilirsiniz. Keyifli alışverişler dileriz..
+                        </div>
+                    </div>
+            
+                    <div>
+                        <label for="about-text">Metni Düzenle:</label>
+                        <textarea id="about-text"></textarea>
+                    </div>
+            
+                    <button class="btn btn-primary" onclick="saveText()">Kaydet</button>
+                    <button class="btn btn-secondary" onclick="cancelEdit()">İptal</button>
+                </div>
+            
+                <script>
+                    // Mevcut metni textarea'ya aktarma
+                    const currentTextDiv = document.getElementById("current-text");
+                    const aboutTextArea = document.getElementById("about-text");
+                    
+                    // Sayfa yüklendiğinde textarea'ya mevcut metni aktar
+                    document.addEventListener("DOMContentLoaded", () => {
+                        aboutTextArea.value = currentTextDiv.textContent.trim();
+                    });
+            
+                    // Kaydet düğmesine tıklandığında metni güncelle
+                    function saveText() {
+                        const newText = aboutTextArea.value.trim();
+                        if (newText) {
+                            currentTextDiv.textContent = newText;
+                            alert("Metin başarıyla güncellendi!");
+                        } else {
+                            alert("Metin boş olamaz!");
+                        }
+                    }
+            
+                    // İptal düğmesine tıklandığında eski metni geri yükle
+                    function cancelEdit() {
+                        aboutTextArea.value = currentTextDiv.textContent.trim();
+                        alert("Düzenleme iptal edildi.");
+                    }
+                </script>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Telif Hakkı &copy; 2024 Tüm Hakları Saklıdır</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Çıkış Yapıyorsunuz?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Mevcut oturumunuzu sonlandırmaya hazırsanız aşağıdaki "Çıkış"ı seçin.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">iptal</button>
+                    <a class="btn btn-primary" href="login.html">Çıkış Yap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
